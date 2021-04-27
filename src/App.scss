@@ -1,0 +1,91 @@
+@import "./sass/_variables.sass";
+
+body {
+  background-color: $info;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: $text-main;
+  font-family: $text-alice;
+}
+
+.appBody {
+  text-align: center;
+  .hero.is-info .title {
+    color: #363636;
+  }
+  .figure.image {
+    height: 120px;
+  }
+  .image .img {
+    max-height: 100%;
+  }
+  .hero-body {
+    padding: 0 1.5rem;
+  }
+}
+
+div.box {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  .dateTag {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-family: $text-archivo;
+  }
+  &.today {
+    border: solid 2px $secondary;
+  }
+  &.dayBox {
+    min-height: 168px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .media-content {
+  	overflow-x: inherit;
+  }
+}
+
+.column {
+  transition: all 1s ease-in-out;
+  .box:not(.noTransition):hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
+
+.hero.is-fullheight.adventHero .hero-body {
+  align-items: flex-start;
+}
+
+section.section.container {
+  max-width: 960px;
+}
+
+button.delete + button.delete {
+  display: none;
+}
+
+.initParentSection {
+  position: relative;
+}
+
+footer.modal-card-foot {
+  justify-content: space-between;
+}
+
+p.credits {
+  position: absolute;
+  bottom: 2px;
+  font-size: 1rem;
+  right: 5px;
+}

@@ -1,0 +1,35 @@
+{
+  "name": "advent-of-goodly-deeds",
+  "version": "0.1.1",
+  "private": false,
+  "dependencies": {
+    "clipboard": "^2.0.4",
+    "dayjs": "^1.8.17",
+    "node-sass": "^5.0.0",
+    "react": "^17.0.2",
+    "react-bulma-components": "^3.1.3",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3"
+  },
+  "scripts": {
+    "start": "BROWSER=none SASS_PATH=node_modules:src/sass react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
